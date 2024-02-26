@@ -8,5 +8,6 @@ class AppColor {
   static Color di = HexColor.fromHex("#CDFFB6");
   static Color green = HexColor.fromHex("#0BCE83");
   static Color blue3 = Color.fromARGB(126, 194, 220, 252);
-  static Color grey7 = Color.fromARGB(180, 117, 115, 115);
+  static Color blue1 = Color.fromARGB(180, 125, 130, 233);
+  static Color blue2 = Color.fromARGB(221, 7, 21, 112);
 }

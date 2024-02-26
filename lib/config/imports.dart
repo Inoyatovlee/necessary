@@ -8,3 +8,4 @@ export 'package:button_hide/config/icons.dart';
 export 'package:button_hide/config/imports.dart';
 export 'package:flutter_svg/flutter_svg.dart';
 export 'package:button_hide/config/images.dart';
+export 'package:button_hide/components/Button.dart';
