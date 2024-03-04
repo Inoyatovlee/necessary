@@ -42,11 +42,15 @@ class Input extends StatelessWidget {
             }
           },
           decoration: InputDecoration(
+            prefixIcon: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Icon(Icons.search_outlined, color: AppColor.non, size: 30),
+            ),
             hintText: hindText,
             errorText: denger! ? demgerText : null,
             // filled: true,
             // fillColor: AppColor.blue3,
-            hintStyle: TextStyle(color: AppColor.dis),
+            hintStyle: TextStyle(color: AppColor.dis, fontSize: 17),
             border: OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
             contentPadding:
                 const EdgeInsets.symmetric(horizontal: 25, vertical: 18),
@@ -55,7 +59,7 @@ class Input extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20)),
             focusedBorder: OutlineInputBorder(
                 borderSide: BorderSide(color: AppColor.non, width: 2),
-                borderRadius: const BorderRadius.all(Radius.circular(16))),
+                borderRadius: const BorderRadius.all(Radius.circular(40))),
           ),
         ),
       ],

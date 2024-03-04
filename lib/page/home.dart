@@ -100,7 +100,9 @@ class _HomePageState extends State<HomePage> {
                     const SizedBox(height: 50),
                     Button1(
                         text: "ORDER NOW",
-                        onTap: () {},
+                        onTap: () {
+                          Get.to(Categories());
+                        },
                         color: AppColor.green,
                         textcolor: AppColor.white),
                     const SizedBox(height: 10),

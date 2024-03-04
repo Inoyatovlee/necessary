@@ -1,5 +1,4 @@
 import 'package:button_hide/config/imports.dart';
-import 'package:button_hide/page/categories.dart';
 
 void main() {
   runApp(const MyApp());
