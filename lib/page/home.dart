@@ -11,7 +11,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color.fromARGB(217, 12, 38, 208),
+        backgroundColor: Color.fromARGB(217, 48, 42, 42),
         body: Container(
           constraints: const BoxConstraints(maxWidth: 500),
           width: double.maxFinite,
@@ -38,6 +38,23 @@ class _HomePageState extends State<HomePage> {
                           SvgPicture.asset(AppIcon.gene, color: AppColor.non)),
                 ),
               ),
+              // Padding(
+              //   padding:
+              //       const EdgeInsets.only(top: 50, bottom: 120, right: 200),
+              //   child: Stack(
+              //     children: [
+              //       CircleAvatar(
+              //           radius: (37),
+              //           backgroundColor: AppColor.white,
+              //           child: ClipRRect(
+              //               borderRadius: BorderRadius.circular(50),
+              //               child: Image.asset(
+              //                 "assets/images/vecte.png",
+              //                 scale: 70,
+              //               )))
+              //     ],
+              //   ),
+              // ),
               Container(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 25, vertical: 25),
@@ -83,7 +100,9 @@ class _HomePageState extends State<HomePage> {
                     const SizedBox(height: 50),
                     Button1(
                         text: "ORDER NOW",
-                        onTap: () {},
+                        onTap: () {
+                          Get.to(Categories());
+                        },
                         color: AppColor.green,
                         textcolor: AppColor.white),
                     const SizedBox(height: 10),

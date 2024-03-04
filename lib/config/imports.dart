@@ -9,3 +9,8 @@ export 'package:button_hide/config/imports.dart';
 export 'package:flutter_svg/flutter_svg.dart';
 export 'package:button_hide/config/images.dart';
 export 'package:button_hide/components/Button.dart';
+export 'package:button_hide/page/categories.dart';
+export 'package:button_hide/components/No_Card.dart';
+export 'package:button_hide/components/categoty/categor.dart';
+export 'package:button_hide/components/input.dart';
+export 'package:button_hide/components/categoty/cart.dart';
