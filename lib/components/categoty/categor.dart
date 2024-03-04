@@ -49,12 +49,12 @@ class OmmabobCategory extends StatelessWidget {
             Cart_(
                 screenWidth: 0.20,
                 images: AppImages.media6,
-                text_1: "flour",
+                text_1: "Flour",
                 text_2: "(132)"),
             Cart_(
                 screenWidth: 0.20,
                 images: AppImages.media7,
-                text_1: "tea",
+                text_1: "Tea",
                 text_2: "(312)"),
           ],
         ),

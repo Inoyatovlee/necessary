@@ -20,10 +20,12 @@ class Cart_ extends StatelessWidget {
     return InkWell(
       onTap: () {},
       child: Container(
-        //  color: AppColor.white1,
         decoration: BoxDecoration(
-            color: AppColor.white1, borderRadius: BorderRadius.circular(20)),
+            border: Border.all(color: AppColor.white1),
+            color: AppColor.white,
+            borderRadius: BorderRadius.circular(20)),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             PhysicalModel(
               color: Colors.transparent,
@@ -38,15 +40,18 @@ class Cart_ extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(text_1,
-                      style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.w700,
-                          color: AppColor.non)),
-                  SizedBox(height: 12),
+                  Text(
+                    text_1,
+                    style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w700,
+                        color: AppColor.non),
+                  ),
+                  const SizedBox(height: 10),
                   Text(text_2,
                       style: TextStyle(fontSize: 12, color: AppColor.dis))
                 ],
