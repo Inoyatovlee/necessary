@@ -1,9 +1,4 @@
-import 'package:button_hide/components/vegetables/SingleChild_button.dart';
-import 'package:button_hide/components/vegetables/SingleChild_button2.dart';
 import 'package:button_hide/config/imports.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
 
 class Vegatables extends StatefulWidget {
   const Vegatables({super.key});
@@ -19,7 +14,7 @@ class _VegatablesState extends State<Vegatables> {
     return Scaffold(
       extendBodyBehindAppBar: false,
       appBar: AppBar(),
-      backgroundColor: Color.fromARGB(0, 14, 128, 60),
+      backgroundColor: const Color.fromARGB(0, 14, 128, 60),
       body: Stack(
         children: [
           Row(
@@ -43,10 +38,22 @@ class _VegatablesState extends State<Vegatables> {
                   const SizedBox(height: 27),
                   Input(hindText: "Search"),
                   const SizedBox(height: 40),
-                  SingleChild_button(),
+                  const SingleChild_button(),
                   const SizedBox(height: 20),
-                  SingleChild_button2(),
+                  const SingleChild_button2(),
                   const SizedBox(height: 32),
+                  data_card(
+                      images: AppImages.media,
+                      name: "Boston Lettuce",
+                      narx: "1.10"),
+                  data_card(
+                      images: AppImages.media2,
+                      name: "Purple Cauliflower",
+                      narx: "1.85"),
+                  data_card(
+                      images: AppImages.media3,
+                      name: "Savoy Cabbage",
+                      narx: "1.45")
                 ],
               ),
             ),

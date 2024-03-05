@@ -18,7 +18,9 @@ class Cart_ extends StatelessWidget {
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        Get.to(Vegatables());
+      },
       child: Container(
         decoration: BoxDecoration(
             border: Border.all(color: AppColor.white1),

@@ -14,4 +14,6 @@ class AppImages {
   static String ellipse_8 = 'assets/images/Ellipse_8.png';
   static String ellipse_10 = 'assets/images/Ellipse_10.png';
   static String vegetables2 = 'assets/images/Vegetables2.png';
+  static String lov = 'assets/images/lov.png';
+  static String shopping = 'assets/images/shopping-cart.png';
 }
