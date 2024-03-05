@@ -15,3 +15,4 @@ export 'package:button_hide/components/categoty/categor.dart';
 export 'package:button_hide/components/input.dart';
 export 'package:button_hide/components/categoty/cart.dart';
 export 'package:button_hide/stores/Home_controller.dart';
+export 'package:button_hide/page/vegetables.dart';
