@@ -1,5 +1,8 @@
+import 'package:button_hide/components/vegetables/SingleChild_button.dart';
+import 'package:button_hide/components/vegetables/SingleChild_button2.dart';
 import 'package:button_hide/config/imports.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:get/get_connect/http/src/utils/utils.dart';
 
 class Vegatables extends StatefulWidget {
@@ -40,7 +43,10 @@ class _VegatablesState extends State<Vegatables> {
                   const SizedBox(height: 27),
                   Input(hindText: "Search"),
                   const SizedBox(height: 40),
-                  const SizedBox(height: 26),
+                  SingleChild_button(),
+                  const SizedBox(height: 20),
+                  SingleChild_button2(),
+                  const SizedBox(height: 32),
                 ],
               ),
             ),
