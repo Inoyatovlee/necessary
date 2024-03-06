@@ -16,6 +16,10 @@ final List<String> imagePaths = [
 
 late List<Widget> _pages;
 
+int _activePage = 0;
+
+final PageController _pageController = PageController(initialPage: 0);
+
 class _InfopageState extends State<Infopage> {
   @override
   void initState() {
@@ -30,15 +34,46 @@ class _InfopageState extends State<Infopage> {
     return Scaffold(
       body: Column(
         children: [
-          SizedBox(
-            width: double.infinity,
-            height: MediaQuery.of(context).size.height / 4,
-            child: PageView.builder(
-                itemCount: imagePaths.length,
-                itemBuilder: (context, index) {
-                  // Rasim widgetini qaytarish
-                  return _pages[index];
-                }),
+          Stack(
+            children: [
+              SizedBox(
+                width: double.infinity,
+                height: MediaQuery.of(context).size.height / 4,
+                child: PageView.builder(
+                  controller: _pageController,
+                    itemCount: imagePaths.length,
+                    itemBuilder: (context, index) {
+                      // Rasim widgetini qaytarish
+                      return _pages[index];
+                    }),
+              ),
+              // Sahifa ko'rsatkichi uchun kod
+              Positioned(
+                bottom: 10,
+                left: 0,
+                right: 0,
+                child: Container(
+                  color: Colors.transparent,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: List<Widget>.generate(
+                        _pages.length,
+                        (index) => Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 5),
+                              child: InkWell(
+                                onTap: () {_pageController.animateToPage(index, duration: Duration(milliseconds: 300), curve: Curves.easeIn)},
+                                child: CircleAvatar(
+                                    radius: 4,
+                                    backgroundColor: _activePage == index
+                                        ? Colors.yellow
+                                        : Colors.grey),
+                              ),
+                            )),
+                  ),
+                ),
+              )
+            ],
           )
         ],
       ),
