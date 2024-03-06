@@ -40,7 +40,7 @@ class _InfopageState extends State<Infopage> {
                 width: double.infinity,
                 height: MediaQuery.of(context).size.height / 4,
                 child: PageView.builder(
-                  controller: _pageController,
+                    controller: _pageController,
                     itemCount: imagePaths.length,
                     itemBuilder: (context, index) {
                       // Rasim widgetini qaytarish
@@ -62,7 +62,11 @@ class _InfopageState extends State<Infopage> {
                               padding:
                                   const EdgeInsets.symmetric(horizontal: 5),
                               child: InkWell(
-                                onTap: () {_pageController.animateToPage(index, duration: Duration(milliseconds: 300), curve: Curves.easeIn)},
+                                onTap: () {
+                                  _pageController.animateToPage(index,
+                                      duration: Duration(milliseconds: 300),
+                                      curve: Curves.easeIn);
+                                },
                                 child: CircleAvatar(
                                     radius: 4,
                                     backgroundColor: _activePage == index
