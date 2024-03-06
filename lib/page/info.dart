@@ -1,11 +1,14 @@
 // 4:08 gacha faqa o'zi odiy iconlarsiz aylantirib bo'linishi
+// 8:42 dan keyin o'zi avto aylanishga o'tadi
+
 import 'package:button_hide/config/imports.dart';
 
-class Infopage extends StatefulWidget {
-  const Infopage({super.key});
+// ignore: camel_case_types
+class ImagePage_ extends StatefulWidget {
+  const ImagePage_({super.key});
 
   @override
-  State<Infopage> createState() => _InfopageState();
+  State<ImagePage_> createState() => _ImagePage_State();
 }
 
 final List<String> imagePaths = [
@@ -20,13 +23,29 @@ int _activePage = 0;
 
 final PageController _pageController = PageController(initialPage: 0);
 
-class _InfopageState extends State<Infopage> {
+Timer? _timer;
+
+class _ImagePage_State extends State<ImagePage_> {
+  void startTimer() {
+    _timer = Timer.periodic(Duration(seconds: 3), (timer) {
+      if (_pageController.page == imagePaths.length - 1) {
+        // oxirgi rasimda ekanligini tekshiradi
+        _pageController.animateToPage(0,
+            duration: Duration(milliseconds: 500), curve: Curves.easeInOut);
+      } else {
+        _pageController.nextPage(
+            duration: Duration(milliseconds: 500), curve: Curves.easeInOut);
+      }
+    });
+  }
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     _pages = List.generate(imagePaths.length,
         (index) => ImagePlaceholder(imagePath: imagePaths[index]));
+    startTimer();
   }
 
   @override
@@ -42,6 +61,11 @@ class _InfopageState extends State<Infopage> {
                 child: PageView.builder(
                     controller: _pageController,
                     itemCount: imagePaths.length,
+                    onPageChanged: (value) {
+                      setState(() {
+                        _activePage = value;
+                      });
+                    },
                     itemBuilder: (context, index) {
                       // Rasim widgetini qaytarish
                       return _pages[index];

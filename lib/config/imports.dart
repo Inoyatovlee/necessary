@@ -24,3 +24,4 @@ export 'package:button_hide/components/vegetables/data_card.dart';
 export 'package:carousel_slider/carousel_slider.dart';
 export 'package:path/path.dart';
 export 'package:button_hide/page/info.dart';
+export 'dart:async';
