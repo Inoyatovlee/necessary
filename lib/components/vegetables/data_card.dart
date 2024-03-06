@@ -56,7 +56,16 @@ class data_card extends StatelessWidget {
                     ]),
               ),
               const SizedBox(height: 25),
-              const Card_icon()
+              Card_icon(
+                height1: 40,
+                height2: 40,
+                width1: 70,
+                width2: 70,
+                color2: AppColor.white,
+                color1: AppColor.green,
+                iconcolor1: AppColor.white,
+                iconcolor2: AppColor.dis,
+              )
             ],
           )
         ],

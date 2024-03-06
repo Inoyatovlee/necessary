@@ -2,9 +2,6 @@
 // 8:42 dan keyin o'zi avto aylanishga o'tadi
 
 import 'package:button_hide/config/imports.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 // ignore: camel_case_types
 class InfoPageDo extends StatefulWidget {
@@ -34,6 +31,7 @@ class _InfoPageDoState extends State<InfoPageDo> {
           body: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              //stacda rasim >. . . <
               Stack(
                 children: [
                   SizedBox(
@@ -135,9 +133,34 @@ class _InfoPageDoState extends State<InfoPageDo> {
                             ]),
                       ),
                       SizedBox(height: 15),
+                      Text("~ 150 gr / piece",
+                          style:
+                              TextStyle(color: AppColor.green, fontSize: 17)),
+                      SizedBox(height: 30),
+                      Text("Spain",
+                          style: TextStyle(
+                              color: AppColor.non,
+                              fontSize: 22,
+                              fontWeight: FontWeight.w600)),
+                      SizedBox(height: 16),
                       Text(
-                        "~ 150 gr / piece",
-                        style: TextStyle(color: AppColor.green, fontSize: 17),
+                          "Lettuce is an annual plant of the daisy family, Asteraceae. It is most often grown as a leaf vegetable, but sometimes for its stem and seeds. Lettuce is most often used for salads, although it is also seen in other kinds of food, such as soups, sandwiches and wraps; it can also be grilled.",
+                          style: TextStyle(color: AppColor.dis, fontSize: 17)),
+                      SizedBox(height: 56),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Card_icon(
+                            height1: 56,
+                            width1: 78,
+                            color1: AppColor.white,
+                            iconcolor1: AppColor.dis,
+                            height2: 56,
+                            width2: 255,
+                            color2: AppColor.green,
+                            iconcolor2: AppColor.white,
+                          )
+                        ],
                       )
                     ],
                   ),

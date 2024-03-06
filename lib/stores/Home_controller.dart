@@ -2,9 +2,9 @@ import 'package:button_hide/config/imports.dart';
 
 class HomeController extends GetxController {
   final List<String> imagePaths = [
-    AppImages.media2,
-    AppImages.media3,
-    AppImages.media4
+    AppImages.media,
+    AppImages.vegetables,
+    AppImages.vegetables1
   ];
 
   late List<Widget> pages;

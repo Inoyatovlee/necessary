@@ -13,8 +13,6 @@ class _VegatablesState extends State<Vegatables> {
     // double screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       extendBodyBehindAppBar: false,
-      appBar: AppBar(),
-      backgroundColor: const Color.fromARGB(0, 14, 128, 60),
       body: Stack(
         children: [
           Row(
@@ -43,15 +41,15 @@ class _VegatablesState extends State<Vegatables> {
                   const SingleChild_button2(),
                   const SizedBox(height: 32),
                   data_card(
-                      images: AppImages.media2,
+                      images: AppImages.media,
                       name: "Boston Lettuce",
                       narx: "1.10"),
                   data_card(
-                      images: AppImages.media3,
+                      images: AppImages.media8,
                       name: "Purple Cauliflower",
                       narx: "1.85"),
                   data_card(
-                      images: AppImages.media4,
+                      images: AppImages.media9,
                       name: "Savoy Cabbage",
                       narx: "1.45")
                 ],
