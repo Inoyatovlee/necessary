@@ -49,6 +49,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.1.1"
+  carousel_slider:
+    dependency: "direct main"
+    description:
+      name: carousel_slider
+      sha256: "9c695cc963bf1d04a47bd6021f68befce8970bcd61d24938e1fb0918cf5d9c42"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.2.1"
   characters:
     dependency: transitive
     description:
@@ -142,6 +150,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.3"
+  flutter_page_view_indicator:
+    dependency: "direct main"
+    description:
+      name: flutter_page_view_indicator
+      sha256: "4f7bb81f58a35abe67f2710d2d15d6d1f2d4750d120dc6e4ece5d9a91225e3bb"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.5"
   flutter_svg:
     dependency: "direct main"
     description:
@@ -219,6 +235,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.1"
+  loop_page_view:
+    dependency: "direct main"
+    description:
+      name: loop_page_view
+      sha256: ed0059c44e29fbdaf1f865cb4511820e6a0e29996a386e05c80d086ce0cf1a00
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.2.5"
   matcher:
     dependency: transitive
     description:
@@ -500,10 +524,10 @@ packages:
     dependency: transitive
     description:
       name: web
-      sha256: "1d9158c616048c38f712a6646e317a3426da10e884447626167240d45209cbad"
+      sha256: "97da13628db363c635202ad97068d47c5b8aa555808e7a9411963c533b449b27"
       url: "https://pub.dev"
     source: hosted
-    version: "0.5.0"
+    version: "0.5.1"
   win32:
     dependency: transitive
     description:
