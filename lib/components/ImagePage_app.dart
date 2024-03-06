@@ -27,14 +27,16 @@ Timer? _timer;
 
 class _ImagePage_State extends State<ImagePage_> {
   void startTimer() {
-    _timer = Timer.periodic(Duration(seconds: 3), (timer) {
+    _timer = Timer.periodic(const Duration(seconds: 3), (timer) {
       if (_pageController.page == imagePaths.length - 1) {
         // oxirgi rasimda ekanligini tekshiradi
         _pageController.animateToPage(0,
-            duration: Duration(milliseconds: 500), curve: Curves.easeInOut);
+            duration: const Duration(milliseconds: 500),
+            curve: Curves.easeInOut);
       } else {
         _pageController.nextPage(
-            duration: Duration(milliseconds: 500), curve: Curves.easeInOut);
+            duration: const Duration(milliseconds: 500),
+            curve: Curves.easeInOut);
       }
     });
   }
@@ -88,7 +90,8 @@ class _ImagePage_State extends State<ImagePage_> {
                               child: InkWell(
                                 onTap: () {
                                   _pageController.animateToPage(index,
-                                      duration: Duration(milliseconds: 300),
+                                      duration:
+                                          const Duration(milliseconds: 300),
                                       curve: Curves.easeIn);
                                 },
                                 child: CircleAvatar(
