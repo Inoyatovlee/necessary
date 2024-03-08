@@ -1,5 +1,8 @@
 import 'package:button_hide/config/imports.dart';
+import 'package:button_hide/page/debit_card.dart';
+import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class Card_icon extends StatelessWidget {
   dynamic height1;
   dynamic height2;
@@ -25,7 +28,7 @@ class Card_icon extends StatelessWidget {
   Widget build(BuildContext context) {
     // double screenWidth = MediaQuery.of(context).size.width;
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         Container(
           height: height1, //40 + 70
@@ -39,14 +42,19 @@ class Card_icon extends StatelessWidget {
               color: iconcolor1, height: 20, width: 20),
         ),
         const SizedBox(width: 5),
-        Container(
-          height: height2,
-          width: width2,
-          padding: const EdgeInsets.all(10),
-          decoration: BoxDecoration(
-              color: color2, borderRadius: BorderRadius.circular(8)),
-          child: Image.asset(AppImages.shopping,
-              color: iconcolor2, height: 20, width: 20),
+        InkWell(
+          onTap: () {
+            Get.to(DebitCard());
+          },
+          child: Container(
+            height: height2,
+            width: width2,
+            padding: const EdgeInsets.all(10),
+            decoration: BoxDecoration(
+                color: color2, borderRadius: BorderRadius.circular(8)),
+            child: Image.asset(AppImages.shopping,
+                color: iconcolor2, height: 20, width: 20),
+          ),
         ),
       ],
     );

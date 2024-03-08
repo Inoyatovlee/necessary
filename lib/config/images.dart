@@ -18,4 +18,8 @@ class AppImages {
   static String vegetables2 = 'assets/images/Vegetables2.png';
   static String lov = 'assets/images/lov.png';
   static String shopping = 'assets/images/shopping-cart.png';
+  static String hint = 'assets/images/Hint.png';
+  static String mcsymbol1 = 'assets/images/mc_symbol1.png';
+  static String card_ta = 'assets/images/Card_ta.png';
+  static String vector_came = 'assets/images/Vector_came.png';
 }

@@ -43,15 +43,15 @@ class _VegatablesState extends State<Vegatables> {
                   data_card(
                       images: AppImages.media,
                       name: "Boston Lettuce",
-                      narx: "1.10"),
+                      narx: "1.10 "),
                   data_card(
                       images: AppImages.media8,
                       name: "Purple Cauliflower",
-                      narx: "1.85"),
+                      narx: "1.85 "),
                   data_card(
                       images: AppImages.media9,
                       name: "Savoy Cabbage",
-                      narx: "1.45")
+                      narx: "1.45 ")
                 ],
               ),
             ),
