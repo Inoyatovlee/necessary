@@ -5,7 +5,9 @@ import 'package:button_hide/config/imports.dart';
 
 // ignore: camel_case_types
 class InfoPageDo extends StatefulWidget {
-  const InfoPageDo({super.key});
+  InfoPageDo({
+    super.key,
+  });
 
   @override
   State<InfoPageDo> createState() => _InfoPageDoState();
@@ -64,7 +66,8 @@ class _InfoPageDoState extends State<InfoPageDo> {
                             children: List<Widget>.generate(
                               controller.pages.length,
                               (index) => Padding(
-                                padding: EdgeInsets.symmetric(horizontal: 5),
+                                padding:
+                                    const EdgeInsets.symmetric(horizontal: 5),
                                 child: InkWell(
                                   onTap: () {
                                     controller.pageController.animateToPage(
@@ -83,7 +86,7 @@ class _InfoPageDoState extends State<InfoPageDo> {
                               ),
                             ),
                           ),
-                          SizedBox(height: 15),
+                          const SizedBox(height: 15),
                           Container(
                             height: 20,
                             decoration: BoxDecoration(
@@ -102,7 +105,8 @@ class _InfoPageDoState extends State<InfoPageDo> {
               ),
               Expanded(
                 child: Container(
-                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                   height: 300,
                   decoration: BoxDecoration(
                     color: AppColor.white,
@@ -115,7 +119,7 @@ class _InfoPageDoState extends State<InfoPageDo> {
                               color: AppColor.non,
                               fontSize: 30,
                               fontWeight: FontWeight.w600)),
-                      SizedBox(height: 20),
+                      const SizedBox(height: 20),
                       RichText(
                         text: TextSpan(
                             text: "1.10",
@@ -132,35 +136,30 @@ class _InfoPageDoState extends State<InfoPageDo> {
                                       fontSize: 24))
                             ]),
                       ),
-                      SizedBox(height: 15),
+                      const SizedBox(height: 15),
                       Text("~ 150 gr / piece",
                           style:
                               TextStyle(color: AppColor.green, fontSize: 17)),
-                      SizedBox(height: 30),
+                      const SizedBox(height: 30),
                       Text("Spain",
                           style: TextStyle(
                               color: AppColor.non,
                               fontSize: 22,
                               fontWeight: FontWeight.w600)),
-                      SizedBox(height: 16),
+                      const SizedBox(height: 16),
                       Text(
                           "Lettuce is an annual plant of the daisy family, Asteraceae. It is most often grown as a leaf vegetable, but sometimes for its stem and seeds. Lettuce is most often used for salads, although it is also seen in other kinds of food, such as soups, sandwiches and wraps; it can also be grilled.",
                           style: TextStyle(color: AppColor.dis, fontSize: 17)),
-                      SizedBox(height: 56),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Card_icon(
-                            height1: 56,
-                            width1: 78,
-                            color1: AppColor.white,
-                            iconcolor1: AppColor.dis,
-                            height2: 56,
-                            width2: 255,
-                            color2: AppColor.green,
-                            iconcolor2: AppColor.white,
-                          )
-                        ],
+                      const SizedBox(height: 56),
+                      Card_icon(
+                        height1: 56,
+                        width1: 78,
+                        color1: AppColor.white,
+                        iconcolor1: AppColor.dis,
+                        height2: 56,
+                        width2: 255,
+                        color2: AppColor.green,
+                        iconcolor2: AppColor.white,
                       )
                     ],
                   ),
