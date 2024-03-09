@@ -33,17 +33,13 @@ class _DebitCardState extends State<DebitCard> {
             Image.asset(AppImages.vector_came,
                 height: 18, width: 22, alignment: Alignment.bottomCenter),
             SizedBox(height: 13),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                // Text(
-                //   "data",
-                //   style: TextStyle(fontSize: 14, color: AppColor.dis),
-                // ),
-                Input(
-                  hindText: "dsds",
-                )
-              ],
+            Input_2(
+              label: "Name on card",
+            ),
+            SizedBox(height: 24),
+            Input_2(
+              label: "Card number",
+              iconn: Image.asset(AppImages.mcsymbol1),
             )
           ],
         ),

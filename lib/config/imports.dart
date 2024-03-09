@@ -26,3 +26,4 @@ export 'package:path/path.dart';
 export 'package:button_hide/components/ImagePage_app.dart';
 export 'dart:async';
 export 'package:button_hide/page/debit_card.dart';
+export 'package:button_hide/components/input_2.dart';
