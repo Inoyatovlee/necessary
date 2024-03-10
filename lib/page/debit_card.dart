@@ -33,13 +33,30 @@ class _DebitCardState extends State<DebitCard> {
             Image.asset(AppImages.vector_came,
                 height: 18, width: 22, alignment: Alignment.bottomCenter),
             SizedBox(height: 13),
-            Input_2(
-              label: "Name on card",
-            ),
+            Input_2(label: "Name on card"),
             SizedBox(height: 24),
             Input_2(
-              label: "Card number",
-              iconn: Image.asset(AppImages.mcsymbol1),
+                label: "Card number", iconn: Image.asset(AppImages.mcsymbol1)),
+            SizedBox(height: 24),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Roe_fild(
+                  label: "Expiry date",
+                  width1: 170,
+                ),
+                Roe_fild(
+                  label: "CVC",
+                  width1: 170,
+                  iconn: Image.asset(AppImages.hint),
+                ),
+              ],
+            ),
+            SizedBox(height: 55),
+            Button1(
+              text: "USE THIST  CARD",
+              color: AppColor.green,
+              textcolor: AppColor.white,
             )
           ],
         ),
