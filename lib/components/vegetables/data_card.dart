@@ -15,6 +15,7 @@ class data_card extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
     return InkWell(
       onTap: () {
         Get.to(InfoPageDo());
@@ -68,15 +69,27 @@ class data_card extends StatelessWidget {
                   ]),
                 ),
                 const SizedBox(height: 25),
-                Card_icon(
-                  height1: 40,
-                  height2: 40,
-                  width1: 70,
-                  width2: 70,
-                  color2: AppColor.green,
-                  color1: AppColor.white,
-                  iconcolor1: AppColor.dis,
-                  iconcolor2: AppColor.white,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Card_icon_(
+                      images: AppImages.lov,
+                      height: 40,
+                      width: screenWidth * 0.18,
+                      color: AppColor.white,
+                      iconcolor: AppColor.dis,
+                    ),
+                    Card_icon_(
+                      images: AppImages.shopping,
+                      height: 40,
+                      width: screenWidth * 0.18,
+                      color: AppColor.green,
+                      iconcolor: AppColor.white,
+                      onTap: () {
+                        Get.to(const DebitCard());
+                      },
+                    )
+                  ],
                 )
               ],
             )
