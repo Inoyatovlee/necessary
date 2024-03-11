@@ -151,15 +151,25 @@ class _InfoPageDoState extends State<InfoPageDo> {
                           "Lettuce is an annual plant of the daisy family, Asteraceae. It is most often grown as a leaf vegetable, but sometimes for its stem and seeds. Lettuce is most often used for salads, although it is also seen in other kinds of food, such as soups, sandwiches and wraps; it can also be grilled.",
                           style: TextStyle(color: AppColor.dis, fontSize: 17)),
                       const SizedBox(height: 56),
-                      Card_icon(
-                        height1: 56,
-                        width1: 78,
-                        color1: AppColor.white,
-                        iconcolor1: AppColor.dis,
-                        height2: 56,
-                        width2: 255,
-                        color2: AppColor.green,
-                        iconcolor2: AppColor.white,
+                      Row(
+                        children: [
+                          Card_icon_(
+                              images: AppImages.lov,
+                              height: 56,
+                              width: 78,
+                              color: AppColor.white,
+                              iconcolor: AppColor.dis),
+                          Spacer(),
+                          Card_icon_(
+                              images: AppImages.shopping,
+                              height: 56,
+                              width: 255,
+                              color: AppColor.green,
+                              iconcolor: AppColor.white,
+                              onTap: () {
+                                Get.to(DebitCard());
+                              }),
+                        ],
                       )
                     ],
                   ),

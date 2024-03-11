@@ -19,7 +19,7 @@ export 'package:button_hide/page/vegetables.dart';
 export 'package:button_hide/components/vegetables/SingleChild_button.dart';
 export 'package:button_hide/components/vegetables/SingleChild_button2.dart';
 export 'package:get/get_connect/http/src/utils/utils.dart';
-export 'package:button_hide/components/vegetables/card_icon.dart';
+export 'package:button_hide/components/vegetables/Card_icon.dart';
 export 'package:button_hide/components/vegetables/data_card.dart';
 export 'package:carousel_slider/carousel_slider.dart';
 export 'package:path/path.dart';

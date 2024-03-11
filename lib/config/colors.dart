@@ -10,5 +10,5 @@ class AppColor {
   static Color green = HexColor.fromHex("#0BCE83");
   static Color blue3 = Color.fromARGB(126, 194, 220, 252);
   static Color blue1 = Color.fromARGB(180, 125, 130, 233);
-  static Color blue2 = Color.fromARGB(221, 7, 21, 112);
+  static Color chec = HexColor.fromHex("#7203FF");
 }
