@@ -1,4 +1,3 @@
-import 'package:button_hide/components/checkout/button.dart';
 import 'package:button_hide/config/imports.dart';
 
 class checkout extends StatefulWidget {
@@ -9,9 +8,18 @@ class checkout extends StatefulWidget {
 }
 
 class _checkoutState extends State<checkout> {
+  bool val1 = true;
+
+  onChangeMethod1(bool newValue1) {
+    setState(() {
+      val1 = newValue1;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: Container(
         padding: EdgeInsets.all(20),
         child: Column(
@@ -47,9 +55,33 @@ Latvia
                   Icon(Icons.device_hub_rounded, color: AppColor.non, size: 27),
               text: "By Drone",
             ),
-            text_ch(text: "Non-contact-delivery")
+            customSwitch("Non-contact-delivery", val1, onChangeMethod1)
           ],
         ),
+      ),
+    );
+  }
+
+  Widget customSwitch(String text, bool val, Function onChangeMethod) {
+    return Padding(
+      padding: EdgeInsets.symmetric(vertical: 20),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(
+            text,
+            style: TextStyle(
+                color: AppColor.non, fontSize: 22, fontWeight: FontWeight.w600),
+          ),
+          Spacer(),
+          Switch(
+              activeColor: AppColor.white,
+              activeTrackColor: AppColor.chec,
+              value: val,
+              onChanged: (newValue) {
+                onChangeMethod(newValue);
+              })
+        ],
       ),
     );
   }
