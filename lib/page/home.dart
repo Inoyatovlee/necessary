@@ -1,4 +1,5 @@
 import 'package:button_hide/config/imports.dart';
+import 'package:button_hide/page/main.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -88,7 +89,7 @@ class _HomePageState extends State<HomePage> {
                         Button1(
                             text: "ORDER NOW",
                             onTap: () {
-                              Get.to(const Categories());
+                              Get.to(const MainPage());
                             },
                             color: AppColor.green,
                             textcolor: AppColor.white),
