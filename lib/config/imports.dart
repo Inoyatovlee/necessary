@@ -31,3 +31,6 @@ export 'package:button_hide/components/debit_card/row_textfild.dart';
 export 'package:button_hide/page/checkout.dart';
 export 'package:button_hide/components/checkout/text_cha.dart';
 export 'package:button_hide/components/checkout/button.dart';
+export 'package:button_hide/stores/main_controller.dart';
+export 'package:button_hide/page/main.dart';
+export 'package:get/get.dart';

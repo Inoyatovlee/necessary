@@ -21,7 +21,7 @@ class _checkoutState extends State<checkout> {
     return Scaffold(
       appBar: AppBar(),
       body: Container(
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         child: Column(
           children: [
             text_ch(text: "Payment method"),
@@ -64,7 +64,7 @@ Latvia
 
   Widget customSwitch(String text, bool val, Function onChangeMethod) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 20),
+      padding: const EdgeInsets.symmetric(vertical: 20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -73,7 +73,7 @@ Latvia
             style: TextStyle(
                 color: AppColor.non, fontSize: 22, fontWeight: FontWeight.w600),
           ),
-          Spacer(),
+          const Spacer(),
           Switch(
               activeColor: AppColor.white,
               activeTrackColor: AppColor.chec,
