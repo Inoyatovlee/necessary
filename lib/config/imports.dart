@@ -28,3 +28,6 @@ export 'dart:async';
 export 'package:button_hide/page/debit_card.dart';
 export 'package:button_hide/components/debit_card/input_2.dart';
 export 'package:button_hide/components/debit_card/row_textfild.dart';
+export 'package:button_hide/page/checkout.dart';
+export 'package:button_hide/components/checkout/text_cha.dart';
+export 'package:button_hide/components/checkout/button.dart';

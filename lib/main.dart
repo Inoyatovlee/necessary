@@ -1,5 +1,4 @@
 import 'package:button_hide/config/imports.dart';
-import 'package:button_hide/page/checkout.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,6 +17,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const SafeArea(child: checkout()));
+        home: const SafeArea(child: HomePage()));
   }
 }
