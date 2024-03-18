@@ -1,7 +1,7 @@
 import 'package:button_hide/config/imports.dart';
 import 'package:button_hide/page/InfoPageDo.dart';
 
-// ignore: camel_case_types
+// ignore: camel_case_types, must_be_immutable
 class data_card extends StatelessWidget {
   dynamic images;
   String name;
