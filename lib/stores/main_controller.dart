@@ -1,4 +1,5 @@
 import 'package:button_hide/config/imports.dart';
+import 'package:button_hide/page/InfoPage.dart';
 import 'package:button_hide/page/InfoPageDo.dart';
 
 class MainController extends GetxController {
@@ -7,7 +8,7 @@ class MainController extends GetxController {
   List menus = [
     {"id": 1, "icon": AppImages.lov, "page": const Categories()},
     {"id": 2, "icon": AppImages.shopping, "page": const DebitCard()},
-    {"id": 3, "icon": AppImages.vector_came, "page": InfoPageDo()},
+    {"id": 3, "icon": AppImages.vector_came, "page": const InfoPage()},
   ];
 
   setWidget(int id) {

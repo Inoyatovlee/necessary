@@ -1,4 +1,6 @@
 import 'package:button_hide/config/imports.dart';
+import 'package:button_hide/page/InfoPage.dart';
+import 'package:button_hide/page/InfoPageDo.dart';
 
 void main() {
   runApp(const MyApp());

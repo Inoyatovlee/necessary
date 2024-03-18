@@ -1,5 +1,6 @@
 import 'package:button_hide/config/imports.dart';
 
+// ignore: must_be_immutable
 class text_ch extends StatelessWidget {
   String text;
 
